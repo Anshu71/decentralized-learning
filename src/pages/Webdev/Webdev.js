@@ -23,7 +23,7 @@ function Webdev() {
 
                         <div class="flex justify-center">
                             <button onClick={toggleVisibility} class="inline-flex text-white bg-[#01105F] shadow-base shadow-sky-500 border-sky-500 border-y-2 py-2 px-6 focus:outline-none rounded-3xl text:base md:text-lg hover:bg-blue-700 ">{isVisible ? 'Road Map' : 'Road Map'}</button>
-                            <button class="ml-5 inline-flex text-white bg-[#01105F] shadow-base shadow-sky-500 border-sky-500 border-y-2 py-2 px-6 focus:outline-none rounded-3xl text:base md:text-lg hover:bg-blue-700 "><a href="/signup">Lets start</a></button>
+                            <button class="ml-5 inline-flex text-white bg-[#01105F] shadow-base shadow-sky-500 border-sky-500 border-y-2 py-2 px-6 focus:outline-none rounded-3xl text:base md:text-lg hover:bg-blue-700 "><a href="#Roadmap">Lets start</a></button>
                         </div>
 
                     </div>
@@ -53,7 +53,7 @@ function Webdev() {
 
             {/* Lower Section */}
 
-            <section class="text-gray-600 body-font bg-[#101828]">
+            <section class="text-gray-600 body-font bg-[#101828]" id='Roadmap' >
                 <div class="w-11/12 mx-auto md:py-16 py-5 pb-5">
                     <h1
                         class="lg:w-3/5 lg:text-4xl md:w-2/3 sm:w-full sm:text-3xl w-full text-2xl leading-8 mb-8 text-white font-title "
@@ -75,7 +75,7 @@ function Webdev() {
                                 <img src="/misc/stacks.svg" alt="stack-of-books-icon" />
                             </div>
                             <h2 class="lg:text-2xl md:text-2xl text-xl font-title font-normal">
-                                HTML
+                                <a href="WebHtml">HTML</a>
                             </h2>
                             <p class="lg:text-base md:text-sm text-[#475467] text-sm">
                                 HTML, short for Hypertext Markup Language, is the foundational language of the web. It uses tags to structure and present content, such as headings, paragraphs, links, and images. By combining these tags, HTML allows for the creation of interactive and visually appealing websites.
@@ -144,6 +144,55 @@ function Webdev() {
                                 The MEAN stack, consisting of MongoDB, Express.js, AngularJS, and Node.js, empowers developers to create robust and modern web applications using a unified JavaScript ecosystem from front to back-end.
                             </p>
                         </div>
+                        <div
+                            class="flex flex-col gap-y-3 p-4 rounded-2xl border border-[#CCC6FF] bg-[#EEECFF]"
+                        >
+                            <div
+                                class="w-14 h-14 bg-[#A488F0] p-4 flex items-center justify-center rounded-full"
+                            >
+                                <img src="/misc/stacks.svg" alt="stack-of-books-icon" />
+                            </div>
+                            <h2 class="lg:text-2xl md:text-2xl text-xl font-title font-normal">
+                                MongoDB
+                            </h2>
+                            <p class="lg:text-base md:text-sm text-[#475467] text-sm">
+                            MongoDB is a popular NoSQL database management system known for its flexibility and scalability, making it suitable for handling unstructured or semi-structured data in modern applications.
+                            </p>
+                        </div>
+                        <div
+                            class="flex flex-col gap-y-3 p-4 rounded-2xl border border-[#FEDF89] bg-[#FFFAEB]"
+                        >
+                            <div
+                                class="w-14 h-14 bg-[#FEC84B] p-4 flex items-center justify-center rounded-full"
+                            >
+                                <img src="/misc/users.svg" alt="users-icon" />
+                            </div>
+                            <h2 class="lg:text-2xl md:text-2xl text-xl font-title font-normal">
+                                React JS
+                            </h2>
+                            <p class="lg:text-base md:text-sm text-[#475467] text-sm">
+                            React is an open-source JavaScript library for building user interfaces (UIs). It allows developers to create interactive, reusable UI components, making it a powerful tool for building modern web and mobile applications.
+                            </p>
+                        </div>
+                        <div
+                            class="flex flex-col gap-y-3 p-4 rounded-2xl border border-[#FECDCA] bg-[#FEF3F2]"
+                        >
+                            <div
+                                class="w-14 h-14 bg-[#F97066] p-4 flex items-center justify-center rounded-full"
+                            >
+                                <img
+                                    src="/misc/workshop.svg"
+                                    alt="teacher-using-a-stick-to-teach-on-board-icon"
+                                />
+                            </div>
+                            <h2 class="lg:text-2xl md:text-2xl text-xl font-title font-normal">
+                                Node JS
+                            </h2>
+                            <p class="lg:text-base md:text-sm text-[#475467] text-sm">
+                            Node.js is an open-source, server-side JavaScript runtime environment that allows developers to build scalable and efficient network applications. It's widely used for creating web servers, APIs, and real-time applications due to its event-driven, non-blocking I/O model.
+                            </p>
+                        </div>
+            
                     </div>
                 </div>
             </section>
