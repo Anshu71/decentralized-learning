@@ -1,53 +1,34 @@
-import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Login from './components/Login';
-import Signup from './components/Signup';
-import Navbar from './components/Navbar';
-import Welcome from './pages/welcome'; // Import your Welcome component
-import Landing from './pages/landing'; // Import your Landing component
-import AuthProvider, { useAuth } from './contexts/authContext'; // Import your AuthContext
+import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+// import Signup from "./components/Signup";
 import Webdev from "./pages/Webdev/Webdev";
 import WebHtml from "./pages/Webdev/WebHtml";
 import Landing from "./pages/landing";
 // import Join from "./pages/join";
 // import RoomPage from "./pages/room";
+// import Login from "./components/Login";
 
 
 function App() {
-  const { user } = useAuth(); // Get user from AuthContext
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // State to track authentication status
-
-  useEffect(() => {
-    // Check if the user is authenticated
-    if (user) {
-      setIsLoggedIn(true);
-    } else {
-      setIsLoggedIn(false);
-    }
-  }, [user]);
-
   return (
     <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={isLoggedIn ? <Landing /> : <Welcome />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/webdev" element={<Webdev />} />
+      <div className="font-sans">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          {/* <Route path="/signup" element={<Signup />} /> */}
+          {/* <Route path="/login" element={<Login />} /> */}
+          <Route path="/webdev" element={<Webdev />} />
           <Route path="/webhtml" element={<WebHtml />} />
           {/* <Route path="/join" element={<Join />} /> */}
           {/* <Route path="/room/:roomId" element={<RoomPage />} /> */}
-      </Routes>
+        </Routes>
+        <Footer />
+      </div>
     </Router>
   );
 }
 
-export default function AuthApp() {
-  return (
-    <AuthProvider>
-      <App />
-    </AuthProvider>
-  );
-}
+export default App;
