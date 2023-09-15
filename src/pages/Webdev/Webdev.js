@@ -1,6 +1,13 @@
 import Caro from './Caro';
+import React, { useState } from 'react';
 
 function Webdev() {
+    const [isVisible, setIsVisible] = useState(false);
+
+  const toggleVisibility = () => {
+    setIsVisible(!isVisible);
+  };
+
     return (
         <div>
             <section class="text-gray-600 body-font bg-[#101828]">
@@ -13,18 +20,34 @@ function Webdev() {
                         </h1>
                         <p class="mb-8 leading-relaxed text-indigo-300 sm:text-sm text-xs">Unlock the World of Web Development: Build, Create, Innovate.</p>
                         <p class="mb-8 leading-relaxed text-[#D0D5DD] sm:text-base text-sm">Embark on a digital journey and master the art of web development. From designing captivating interfaces to crafting interactive user experiences, explore the endless possibilities of creating for the web.</p>
+
                         <div class="flex justify-center">
-                            <button class="inline-flex text-white bg-[#01105F] shadow-base shadow-sky-500 border-sky-500 border-y-2 py-2 px-6 focus:outline-none rounded-3xl text:base md:text-lg hover:bg-blue-700 ">Road Map</button>
+                            <button onClick={toggleVisibility} class="inline-flex text-white bg-[#01105F] shadow-base shadow-sky-500 border-sky-500 border-y-2 py-2 px-6 focus:outline-none rounded-3xl text:base md:text-lg hover:bg-blue-700 ">{isVisible ? 'Road Map' : 'Road Map'}</button>
+                            <button class="ml-5 inline-flex text-white bg-[#01105F] shadow-base shadow-sky-500 border-sky-500 border-y-2 py-2 px-6 focus:outline-none rounded-3xl text:base md:text-lg hover:bg-blue-700 "><a href="/signup">Lets start</a></button>
                         </div>
+
                     </div>
 
                     <div class=" flex sm:w-1/2">
                         <div class="hidden md:flex absolute z-30 m-14 w-48 h-52 xl:w-[500px] xl:h-[300px] bg-[#98A2B3] opacity-30 blur-2xl flex-none order-4 rounded-full pointer-events-none"></div>
                         <div class="z-50 flex align-middle rounded-xl m-2 mt-10">
-                            <img class="w-full object-contain" src="images/Webdev.jpg"></img>
+                        <img class="w-full object-contain" alt="Hidden Image" src="images/Webdev.jpg"/>
                         </div>
                     </div>
 
+                </div>
+
+                <div class="text-gray-600 body-font">
+                    <div class="container px-5 py-0 mx-auto flex flex-col">
+                        <div class="lg:w-11/12 mx-auto">
+                            <div class="rounded-3xl shadow-2xl shadow-slate-500 h-auto overflow-hidden">
+                            {isVisible && (
+                            <img alt="content" class="object-cover object-center h-full w-full" src="images/RoadMap Webdev.png"></img>
+                            )}
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -55,7 +78,7 @@ function Webdev() {
                                 HTML
                             </h2>
                             <p class="lg:text-base md:text-sm text-[#475467] text-sm">
-                            HTML, short for Hypertext Markup Language, is the foundational language of the web. It uses tags to structure and present content, such as headings, paragraphs, links, and images. By combining these tags, HTML allows for the creation of interactive and visually appealing websites.
+                                HTML, short for Hypertext Markup Language, is the foundational language of the web. It uses tags to structure and present content, such as headings, paragraphs, links, and images. By combining these tags, HTML allows for the creation of interactive and visually appealing websites.
                             </p>
                         </div>
                         <div
@@ -70,7 +93,7 @@ function Webdev() {
                                 CSS
                             </h2>
                             <p class="lg:text-base md:text-sm text-[#475467] text-sm">
-                            CSS, or Cascading Style Sheets, is a language used to style the appearance of HTML elements, allowing web designers to customize fonts, colors, layouts, and other visual aspects to create visually captivating and user-friendly websites.
+                                CSS, or Cascading Style Sheets, is a language used to style the appearance of HTML elements, allowing web designers to customize fonts, colors, layouts, and other visual aspects to create visually captivating and user-friendly websites.
                             </p>
                         </div>
                         <div
@@ -88,7 +111,7 @@ function Webdev() {
                                 Java Script
                             </h2>
                             <p class="lg:text-base md:text-sm text-[#475467] text-sm">
-                            JavaScript, often referred to as JS, is a dynamic programming language used to create interactive web pages, implement web applications, and enhance user experience. With its versatility and widespread adoption, JavaScript plays a crucial role in modern web development.
+                                JavaScript, often referred to as JS, is a dynamic programming language used to create interactive web pages, implement web applications, and enhance user experience. With its versatility and widespread adoption, JavaScript plays a crucial role in modern web development.
                             </p>
                         </div>
                         <div
@@ -103,7 +126,7 @@ function Webdev() {
                                 Mern Stack
                             </h2>
                             <p class="lg:text-base md:text-sm text-[#475467] text-sm">
-                            MERN stack, comprising MongoDB, Express.js, React.js, and Node.js, is a comprehensive web development technology stack for building feature-rich and scalable applications, from the frontend to the backend.
+                                MERN stack, comprising MongoDB, Express.js, React.js, and Node.js, is a comprehensive web development technology stack for building feature-rich and scalable applications, from the frontend to the backend.
                             </p>
                         </div>
                         <div
@@ -118,7 +141,7 @@ function Webdev() {
                                 Mean Stack
                             </h2>
                             <p class="lg:text-base md:text-sm text-[#475467] text-sm">
-                            The MEAN stack, consisting of MongoDB, Express.js, AngularJS, and Node.js, empowers developers to create robust and modern web applications using a unified JavaScript ecosystem from front to back-end.
+                                The MEAN stack, consisting of MongoDB, Express.js, AngularJS, and Node.js, empowers developers to create robust and modern web applications using a unified JavaScript ecosystem from front to back-end.
                             </p>
                         </div>
                     </div>
