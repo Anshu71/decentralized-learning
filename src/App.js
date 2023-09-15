@@ -6,6 +6,14 @@ import Navbar from './components/Navbar';
 import Welcome from './pages/welcome'; // Import your Welcome component
 import Landing from './pages/landing'; // Import your Landing component
 import AuthProvider, { useAuth } from './contexts/authContext'; // Import your AuthContext
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Footer from "./components/Footer";
+import Webdev from "./pages/Webdev/Webdev";
+import WebHtml from "./pages/Webdev/WebHtml";
+import Landing from "./pages/landing";
+// import Join from "./pages/join";
+// import RoomPage from "./pages/room";
+
 
 function App() {
   const { user } = useAuth(); // Get user from AuthContext
@@ -27,6 +35,10 @@ function App() {
         <Route path="/" element={isLoggedIn ? <Landing /> : <Welcome />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/webdev" element={<Webdev />} />
+          <Route path="/webhtml" element={<WebHtml />} />
+          {/* <Route path="/join" element={<Join />} /> */}
+          {/* <Route path="/room/:roomId" element={<RoomPage />} /> */}
       </Routes>
     </Router>
   );
