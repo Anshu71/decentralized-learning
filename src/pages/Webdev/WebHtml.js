@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { HashRouter } from 'react-router-dom';
+import Navbarw from '../../components/Navbarw';
 
 function WebHtml() {
     return (
+        <div>
+        <Navbarw />
         <section class="text-[#D0D5DD] body-font bg-[#101828]">
             <div class="centre container mx-52 px-5 py-24 items-center flex flex-wrap">
                 <img class="lg:w-1/6 mb-2 object-cover object-center rounded" alt="hero" src="images/html.jpg" />
@@ -17,6 +20,7 @@ function WebHtml() {
 
 
         </section>
+        </div>
     )
 }
 
