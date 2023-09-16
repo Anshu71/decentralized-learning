@@ -46,7 +46,7 @@ function Login() {
         console.log('Logged in:', user);
        // alert('Successfully logged in');
         //window.location.href = "C:\Users\Hiral Vaghasiya\Desktop\mumbaiHacks\StudentPlus\src\pages\landing.js";
-        navigate('/');
+        navigate('/welcome');
       })
       .catch((error) => {
         // Handle login error

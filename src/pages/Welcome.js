@@ -1,16 +1,16 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Courses from "../components/Courses";
-import Navbar from "../components/Navbar";
+import Navbarw from "../components/Navbarw";
 
-function Landing() {
+function Welcome() {
   return (
     <div className="font-sans">
-      <Navbar />
+      <Navbarw />
       <Hero />
       <Courses />
     </div>
   );
 }
 
-export default Landing;
+export default Welcome;

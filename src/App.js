@@ -6,8 +6,9 @@ import Signup from "./components/Signup";
 import Webdev from "./pages/Webdev/Webdev";
 import WebHtml from "./pages/Webdev/WebHtml";
 import Landing from "./pages/landing";
-// import Join from "./pages/join";
-// import RoomPage from "./pages/room";
+import Welcome from "./pages/Welcome";
+import Join from "./pages/join";
+import RoomPage from "./pages/room";
 import Login from "./components/Login";
 
 
@@ -15,15 +16,16 @@ function App() {
   return (
     <Router>
       <div className="font-sans">
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/welcome" element={<Welcome />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route path="/webdev" element={<Webdev />} />
           <Route path="/webhtml" element={<WebHtml />} />
-          {/* <Route path="/join" element={<Join />} /> */}
-          {/* <Route path="/room/:roomId" element={<RoomPage />} /> */}
+          <Route path="/join" element={<Join />} />
+          <Route path="/room/:roomId" element={<RoomPage />} />
         </Routes>
         <Footer />
       </div>

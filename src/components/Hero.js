@@ -14,7 +14,7 @@ function Hero() {
               <p class="mb-8 leading-relaxed text-indigo-300 sm:text-sm text-xs">Expand Minds: Empowering Education</p>
               <p class="mb-8 leading-relaxed text-[#D0D5DD] sm:text-base text-sm">Welcome to our education website, where knowledge meets innovation. Unlock your potential, explore diverse learning opportunities, and embark on a transformative educational journey with us.</p>
               <div class="flex justify-center">
-                <button class="inline-flex text-white bg-[#01105F] shadow-base shadow-sky-500 border-sky-500 border-y-2 py-2 px-6 focus:outline-none rounded-3xl text:base md:text-lg hover:bg-blue-700 "><a href="/signup">Explore</a></button>
+                <button class="inline-flex text-white bg-[#01105F] shadow-base shadow-sky-500 border-sky-500 border-y-2 py-2 px-6 focus:outline-none rounded-3xl text:base md:text-lg hover:bg-blue-700 "><a href="#Courses">Explore</a></button>
               </div>
             </div>
 
