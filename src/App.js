@@ -10,6 +10,11 @@ import Welcome from "./pages/Welcome";
 import Join from "./pages/join";
 import RoomPage from "./pages/room";
 import Login from "./components/Login";
+import Prevnav from "./components/Prevnav";
+
+import Thecodeweb from "./pages/Webdev/Html/Thecodeweb";
+
+
 
 
 function App() {
@@ -26,6 +31,9 @@ function App() {
           <Route path="/webhtml" element={<WebHtml />} />
           <Route path="/join" element={<Join />} />
           <Route path="/room/:roomId" element={<RoomPage />} />
+          <Route path="/prev" element={<Prevnav />} />
+
+          <Route path="/Html/thecodeweb" element={<Thecodeweb />} />
         </Routes>
         <Footer />
       </div>
