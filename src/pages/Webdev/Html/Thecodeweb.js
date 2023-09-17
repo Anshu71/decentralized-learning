@@ -1,4 +1,3 @@
-// import React, { PureComponent } from 'react'
 import Navbarw from '../../../components/Navbarw';
 import Prevnav from '../../../components/Prevnav';
 import React, { useState } from 'react';
@@ -6,9 +5,9 @@ import YouTube from 'react-youtube';
 
 function Thecodeweb() {
     const [videoState, setVideoState] = useState({
-        videoId: 'BkEE69L4nO0', 
+        videoId: 'kUMe1FH4CHE', 
         player: null,
-        startSeconds: 30,
+        startSeconds: 56,
         endSeconds: 30, 
     });
 
@@ -48,7 +47,7 @@ function Thecodeweb() {
             </div>
 
             <div class="flex justify-center">
-                <button class="inline-flex text-white bg-[#01105F] shadow-base shadow-sky-500 border-sky-500 border-y-2 py-2 px-6 focus:outline-none rounded-3xl text:base md:text-lg hover:bg-blue-700 mb-10"><a target="_blank" href="https://www.youtube.com/watch?v=BkEE69L4nO0">Full Youtube Link</a></button>
+                <button class="inline-flex text-white bg-[#01105F] shadow-base shadow-sky-500 border-sky-500 border-y-2 py-2 px-6 focus:outline-none rounded-3xl text:base md:text-lg hover:bg-blue-700 mb-10"><a target="_blank" href="https://www.youtube.com/watch?v=kUMe1FH4CHE">Full Youtube Link</a></button>
             </div>
 
         </div>

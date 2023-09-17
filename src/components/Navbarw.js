@@ -4,7 +4,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 const navlinks = [
     {
         title: "Home",
-        link: "/",
+        link: "/welcome",
     },
     {
         title: "Courses",
@@ -60,7 +60,7 @@ const Navbarw = () => {
                             ))}
 
                             <div className="!ml-8 border-2 border-[#475467] rounded-lg">
-                                <button className="inline-flex items-center text-[#E0EAFF] border-1 border-white py-1 px-2 focus:outline-none rounded md:mt-0 hover:bg-[#475467] hover:text-[#E0EAFF] text-lg 2xl:text-xl"><a href='/signup'>Profile</a>
+                                <button className="inline-flex items-center text-[#E0EAFF] border-1 border-white py-1 px-2 focus:outline-none rounded md:mt-0 hover:bg-[#475467] hover:text-[#E0EAFF] text-lg 2xl:text-xl"><a href='/welcome'>Profile</a>
                                </button>
                             </div>
                         </div>

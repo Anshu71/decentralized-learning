@@ -11,6 +11,11 @@ function Prevnav() {
                         </button>
                     </div>
 
+                    {/* <div class="ml-5 border-2 border-[#475467] rounded-lg">
+                        <button class="inline-flex  text-[#E0EAFF] border-1 border-white py-1 px-2 focus:outline-none rounded md:mt-0 hover:bg-[#475467] hover:text-[#E0EAFF] text-lg 2xl:text-xl"><a href="\Quizhtml.html">Next</a>
+                        </button>
+                    </div> */}
+
 
 
                 </div>

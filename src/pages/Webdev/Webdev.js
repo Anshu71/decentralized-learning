@@ -1,6 +1,7 @@
 import Caro from './Caro';
 import React, { useState } from 'react';
 import Navbar from '../../components/Navbar';
+import Navbarw from '../../components/Navbarw';
 
 function Webdev() {
     const [isVisible, setIsVisible] = useState(false);
@@ -11,7 +12,7 @@ function Webdev() {
 
     return (
         <div>
-            <Navbar />
+            <Navbarw />
             <section class="text-gray-600 body-font bg-[#101828]">
                 <div class="w-11/12 mx-auto flex md:py-16 py-5 md:flex-row flex-col pb-5 items-center">
 
